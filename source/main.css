@@ -189,10 +189,12 @@ header nav .container .menu{
     width: 100%;
     justify-content: end;
 }
+header nav .container ul{
+    display: flex;
+    gap: 2rem;
+}
 header nav .container ul li{
     font-size: var(--body-text);
-    display: inline-block;
-    margin-right: .8rem;
 }
 header nav .container ul li a{
     color: var(--title-color);
@@ -227,4 +229,89 @@ header nav .container ul li a{
 .s-especialidades .container .content_especialidades{
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 4rem;
+}
+
+.s-documentacao{
+    background: linear-gradient(180deg, #BCFFFD 0%, rgba(188, 255, 253, 0) 100%);
+}
+.s-documentacao .container{
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 4rem;
+    align-items: baseline;
+}
+.s-documentacao .container .content_meta{
+    display: grid;
+    gap: 1rem;
+}
+.s-documentacao .container .content_meta img{
+    max-width: max-content;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-top: 1.6rem;
+    border-radius: .6rem;
+}
+
+.s-documentacao .container .content_documentacao{
+
+}
+.s-documentacao .container .content_documentacao li{
+    font-size: var(--smallest);
+    line-height: 220%;
+    position: relative;
+    list-style: none;
+}
+.s-documentacao .container .content_documentacao ol li::before{
+    content: url(../assets/check-mark.svg);
+
+    position: absolute;
+    left: -2rem;
+    top:.25rem;
+}
+
+.icon-logotipowhite{
+    width: 350em;
+}
+footer{
+    background-color: var(--title-color);
+}
+footer .container{
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: baseline;
+    justify-items: baseline;
+}
+
+footer p{
+   color: #ffffff;
+}
+footer h3{
+   color: #ffffff;
+}
+footer li{
+   color: #ffffff;
+}
+footer .container ul{
+   font-size: var(--smallest);
+   line-height: 160%;
+}
+footer .copyright {
+    border-top: .01rem solid hsla(178, 100%, 87%, 20%);
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+footer .copyright .container {
+    justify-items: center;
+}
+footer .copyright .container p{
+    font-size: var(--smallest);
+}
+footer .social{
+    display: flex;
+    gap: 2rem;
+}
+
+
+footer .social .icon{
+    width: 2.4rem;
+    height: 2.4rem;
 }
